@@ -1,0 +1,42 @@
+@media only screen and (min-width:320px) {
+    html {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (min-width: 341px) and (max-width:365px) {
+    html {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width:375px) {
+    html {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (min-width:414px) {
+    html {
+        font-size: 20px !important;
+    }
+}
+
+*{
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Normal', 'Arial';
+   /* min-width: 320px;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去除点击时的灰色块*/
+    -webkit-user-select: none; /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+    overflow-y: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

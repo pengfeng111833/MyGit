@@ -1,0 +1,135 @@
+.head{
+    line-height: 4rem;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #A1A1A1;
+}
+.bd-container{
+    height: 18rem;
+    width: 17rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #C9C9C9;
+}
+.bd{
+    width: 100%;
+    height: 20rem;
+}
+.page-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.circle {
+    width: 16rem;
+    height: 16rem;  
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    -moz-box-shadow:0 0 10px #A6A3A1;
+    -webkit-box-shadow:0 0 10px #A6A3A1;
+    box-shadow:0 0 10px #A6A3A1;
+}
+.pie_left, .pie_right {
+    width: 16rem; 
+    height: 16rem;
+    position: absolute;
+    top: 0;left: 0;
+    background-color: #F7882E;
+    border-radius: 50%;
+}
+.left, .right {
+    display: block;
+    width: 16rem; 
+    height: 16rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pie_right, .right {
+    clip:rect(0,auto,auto,8rem);
+}
+.pie_left, .left {
+    clip:rect(0,8rem,auto,0);
+}
+.mask {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    left: 2rem;
+    top: 2rem;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    -moz-box-shadow:inset 0 0 10px #A6A3A1;
+    -webkit-box-shadow: inset 0 0 10px #A6A3A1;
+    box-shadow: inset 0 0 10px #A6A3A1;
+}
+.mask .full-percent, .mask .sports-quantity, .mask .unit{
+    display: block;
+    font-size: 1.8rem;
+}
+.mask .sports-quantity, .mask .unit{
+    color: #706E6F;
+}
+.mask .full-percent{
+    color: #F7882E;
+}
+.mask .sports-quantity{
+    font-size: 2.8rem;
+}
+.mask .unit{
+    font-size: 1.3rem;
+}
+.slide-circle{
+    border-radius: 50%;
+    width:0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    border: solid 1px #333333;
+    bottom: 0rem;
+    cursor: pointer;
+}
+.c1{
+    right: 2.8rem;
+}
+.c2{
+    right: 1.4rem;
+}
+.c3{
+    right: 0rem;
+}
+.footer{
+    padding-top: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
+    width: 16rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer .option{
+    cursor: pointer;
+    display:  inline-block;
+}
+.o1{
+    margin-right: 2rem;
+}
+.o2{
+    margin-right: 2rem;
+}
+.normal{
+    color: #333333;
+}
+.selected{
+    color: #FF6600;
+}
+.circle-selected{
+    background-color: #FF6600
+}
+.weui-loadmore .weui-loadmore__tips{
+    font-size: 16px;
+}

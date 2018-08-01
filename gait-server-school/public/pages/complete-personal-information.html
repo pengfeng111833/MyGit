@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="MarsBo">
+    <title>个人信息完善</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../css/public/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/complete-personal-information.css">
+
+</head>
+
+<body>
+    
+    <div id="myLoading" class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>  
+    <div id="container" style="display: none">
+        <div class="personal-information picker js_show">
+            <div class="weui-cells__title hint">
+                <div class="hintText" >
+                    填写准确的信息，有助于为您提供更好的服务
+                </div>
+            </div>
+            <a href="javascript:;" class="weui-cell nickname">
+                <div class="weui-cell__bd">
+                    <label class="weui-label">昵称</label>
+                </div>
+                <div class="weui-cell__ft">
+                    <input class="weui-input" placeholder="请输入昵称" type="text" v-model="personalInfo.nickName">
+                </div>
+            </a>
+            <a href="javascript:;" class="weui-cell weui-cell_access" v-on:click="showGenderPicker">
+                <div class="weui-cell__bd">
+                    <p>性别</p>
+                </div>
+                <div class="weui-cell__ft" >
+                    {{personalInfo.gender}}
+                </div>
+            </a>
+            <a href="javascript:;" class="weui-cell weui-cell_access" v-on:click="showHeightPicker">
+                <div class="weui-cell__bd">
+                    <p>身高</p>
+                </div>
+                <div class="weui-cell__ft">
+                    {{personalInfo.height}}
+                </div>
+            </a>
+            <a href="javascript:;" class="weui-cell weui-cell_access" v-on:click="showWeightPicker">
+                <div class="weui-cell__bd">
+                    <p>体重</p>
+                </div>
+                <div class="weui-cell__ft">
+                    {{personalInfo.weight}}
+                </div>
+            </a>
+            <a href="javascript:;" class="weui-cell weui-cell_access" v-on:click="showBirthYearPicker">
+                <div class="weui-cell__bd">
+                    <p>出生年</p>
+                </div>
+                <div class="weui-cell__ft">
+                    {{personalInfo.birthYear}}
+                </div>
+            </a>
+        </div>
+        <div class="sports-target">
+            <div class="weui-cells__title hint">
+                <div class="hintText">
+                    根据世界卫生组织建议，每天运动8000步有助于您的健康
+                </div>
+            </div>
+            <a href="javascript:;" class="weui-cell weui-cell_access" v-on:click="showFootStepsPicker">
+                <div class="weui-cell__bd">
+                    <p>步数目标</p>
+                </div>
+                <div class="weui-cell__ft">
+                    {{ sportsTarget.footSteps }}
+                </div>
+            </a>
+        </div>
+        <div class="buttonGroup">
+            <button class="weui-btn weui-btn_warn btn" v-on:click="back">取消</button>
+            <button class="weui-btn weui-btn_primary btn" v-on:click="save">保存</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="../js/public/jquery-1.12.1.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/public/vue.js"></script>
+    <script type="text/javascript" src="../js/public/util.js"></script>
+    <script type="text/javascript" src="../js/public/config.js"></script>
+    <script type="text/javascript" src="../js/public/wechat.js"></script>
+    <script type="text/javascript" src="../js/complete-personal-information.js"></script>
+    <script type="text/javascript" src="../js/public/weui.min.js"></script>
+    
+    
+
+</body>
+
+</html>

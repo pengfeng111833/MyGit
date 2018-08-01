@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" href="../css/public/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/new-main.css">
+    <link rel="stylesheet" type="text/css" href="../css/personal-information.css">
+
+</head>
+
+<body>
+    
+    <div id="myLoading" class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+    <div id="page-wrapper" style="display: none; height: 100%; width: 100%;">
+        <div class="head">
+            <img class="h-image" v-bind:src="headImageUrl">
+            <div class="h-nickname">{{ personalInfo.nickName }}</div>
+        </div>
+        <div class="main-container">
+            <div class="option height" v-on:click="heightClicked">
+                <div class="title">身高</div>
+                <div class="tap-circle">
+                    <div class="content">{{ personalInfo.height }}</div>
+                    <div class="unit">cm</div>
+                </div>
+            </div>
+            <div class="option weight" v-on:click="weightClicked">
+                <div class="title">体重</div>
+                <div class="tap-circle">
+                    <div class="content">{{ personalInfo.weight }}</div>
+                    <div class="unit">kg</div>
+                </div>
+            </div>
+            <div class="option birth-year" v-on:click="birthYearClicked">
+                <div class="title">出生年</div>
+                <div class="tap-circle">
+                    <div class="content">{{ personalInfo.birthYear }}</div>
+                    <div class="unit">年</div>
+                </div>
+            </div>
+            <div class="option gender" v-on:click="genderClicked">
+                <div class="title">性别</div>
+                <div class="tap-circle">
+                    <div class="content">{{ personalInfo.gender }}</div>
+                </div>
+            </div>
+            <div class="option sports-target" v-on:click="sportsTargetClicked">
+                <div class="title">运动目标</div>
+                <div class="tap-circle">
+                    <div class="content">{{ sportsTarget.footSteps }}</div>
+                    <div class="unit">步</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="../js/public/jquery-1.12.1.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/public/weui.min.js"></script>
+    <script type="text/javascript" src="../js/public/vue.js"></script>
+    <script type="text/javascript" src="../js/public/util.js"></script>
+    <script type="text/javascript" src="../js/public/config.js"></script>
+    <script type="text/javascript" src="../js/public/wechat.js"></script>
+    <script type="text/javascript" src="../js/personal-information.js"></script>
+    
+</body>
+
+</html>

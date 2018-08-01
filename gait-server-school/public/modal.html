@@ -1,0 +1,18 @@
+    <div id="modal" class="modal" v-bind:style="style">
+        <div class="modal-dialog">
+            <div class="modal-title">
+                {{title}}
+            </div>
+            <div class="modal-content">
+                {{content}}
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel btn"
+                    v-for="button in buttons"
+                    v-bind:class="button.classObject"
+                    v-on:click="button.handler">
+                    {{button.caption}}
+                </button>
+            </div>
+        </div>
+    </div>

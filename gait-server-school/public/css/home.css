@@ -1,0 +1,91 @@
+.achievement{
+    width: 7.2rem;
+    height: 1.66rem;
+    border-bottom: 0.2rem solid #E5E5E5;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+.achievement-left{
+    width: 5.34rem;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    height: 1.66rem;
+}
+.head-image{
+    position: absolute;
+    left: 0.33rem;
+    top: 0.17rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.nick-name{
+    position: absolute;
+    left: 2.01rem;
+    top: 0.17rem;
+    font-size: 0.33rem;
+    font-family: 'SimHei';
+}
+.accomplishment{
+    position: absolute;
+    left: 2.01rem;
+    top: 0.85rem;
+    font-size: 0.22rem;
+    line-height: 0.3rem;
+    color: #707070;
+    font-family: 'SimHei';
+}
+.achievement-right{
+    position: absolute;
+    height: 1.49rem;
+    width: 1.84rem;
+    right: 0rem;
+    top: 0.1rem;
+    font-size: 0.33rem;
+    font-family: 'SimHei';
+    border-left: 0.02rem solid #E5E5E5;
+    text-align: center;
+    line-height: 1.49rem;
+}
+.options-container{
+    position: absolute;
+    top: 1.86rem;
+    left: 0rem;
+    width: 7.2rem;
+    height: 8rem;
+
+}
+.option{
+    position: relative;
+    width: 7.2rem;
+    height: 2rem;
+}
+.option-left{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    width: 1.95rem;
+    height: 2rem;
+}
+.option-left .icon{
+    width: 0.6rem;
+    height: 0.7rem;
+    position: absolute;
+    left: 0.9rem;
+    top: 0.6rem;
+}
+.option-right{
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    width: 5.25rem;
+    height: 1.99rem;
+    line-height: 1.99rem;
+    font-size: 0.33rem;
+    font-family: 'SimHei';
+    border-bottom: 1px solid #E5E5E5;
+}
+.weui-loadmore .weui-loadmore__tips{
+    font-size: 16px;
+}

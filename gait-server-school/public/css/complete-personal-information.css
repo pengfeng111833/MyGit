@@ -1,0 +1,47 @@
+html {
+font-size: calc(100vw/7.20) !important;
+}
+#container{
+    font-size: 0.30rem;
+}
+.hint{
+    margin: 0;
+    padding-left: 0.4rem;
+    height: 0.8rem;
+    background-color: #fcfcfc;
+    color: #9f9e9e;
+    font-size: 0.24rem;
+}
+.hintText{
+    padding-top: 0.2rem;
+}
+.nickname{
+    color:black;
+}
+.weui-cell{
+    margin-left: 0.24rem;
+}
+.buttonGroup{
+    margin-left: 0.4rem;
+}
+.btn{
+    display: inline;
+    width: 3rem !important;
+    margin: 0.1rem;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action{
+    font-size: 16px;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__bd .weui-picker__group .weui-picker__content .weui-picker__item{
+    font-size: 16px;
+    color: #CECBCB;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action[data-action="cancel"]{
+    color: #CECBCB;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action[data-action="select"]{
+    color: #2175F4;
+}
+.weui-loadmore .weui-loadmore__tips{
+    font-size: 16px;
+}

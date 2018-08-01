@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../css/public/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/sports-information.css">
+    <title>运动信息</title>
+
+</head>
+
+<body>
+    
+    <div id="myLoading" class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>  
+    <div id="page-wrapper" style="display: none;" class="page-wrapper">
+        <div class="head">
+            今天
+        </div>
+        <div class="bd-container">
+            <div class="bd">
+                <div class="circle">
+                    <div class="pie_left"><div class="left"></div></div>
+                    <div class="pie_right"><div class="right"></div></div>
+                    <div class="mask">
+                        <br>
+                        <span class="full-percent"><span class="percent">{{ sportsData.percent }}</span>%</span>
+                        <span class="sports-quantity">{{ sportsTarget.quantity }}</span>
+                        <span class="unit">{{ sportsTarget.unit }}</span>
+                    </div>
+                    <span class="slide-circle c1 {{ circleStyle.c1Color }}" v-on:click="c1Clicked"></span>
+                    <span class="slide-circle c2 {{ circleStyle.c2Color }}" v-on:click="c2Clicked"></span>
+                    <span class="slide-circle c3 {{ circleStyle.c3Color }}" v-on:click="c3Clicked"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span class="option o1" v-on:click="forwardToFootsteps">
+                <div class="{{ fontStyle.footStepsClass }}">{{ sportsData.footSteps }}</div>
+                <div class="{{ fontStyle.footStepsClass }}">步数</div>
+            </span>
+            <span class="option o2" v-on:click="forwardToKilometers">
+                <div class="{{ fontStyle.kilometersClass }}">{{ sportsData.kilometers }}</div>
+                <div class="{{ fontStyle.kilometersClass }}">公里</div>
+            </span>
+            <span class="option o3" v-on:click="forwardToCalorie">
+                <div class="{{ fontStyle.calorieClass }}">{{ sportsData.calorie }}</div>
+                <div class="{{ fontStyle.calorieClass }}">卡路里</div>
+            </span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/public/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../js/public/jquery.rotate.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/public/vue.js"></script>
+    <script type="text/javascript" src="../js/public/util.js"></script>
+    <script type="text/javascript" src="../js/public/config.js"></script>
+    <script type="text/javascript" src="../js/public/wechat.js"></script>
+    <script type="text/javascript" src="../js/public/insole-parse.js"></script>
+    <script type="text/javascript" src="../js/sports-information.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.content-container{
+    width: 100%;
+    margin-top: 1rem;
+}
+.content-container .content{
+    width: 90%;
+    height: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    color: #A1A1A1;
+    border-bottom: 1px solid #A1A1A1;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+.weui-loadmore .weui-loadmore__tips{
+    font-size: 16px;
+}

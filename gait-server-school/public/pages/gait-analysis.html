@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>步态分析</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../css/public/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/new-main.css">
+    <link rel="stylesheet" type="text/css" href="../css/gait-analysis.css">
+</head>
+<body>
+
+    <div id="myLoading" class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>  
+    <div id="page-wrapper" style="display: none; height: 100%; width: 100%;">
+        <div class="sports-status">
+            <div class="head">
+                <div class="title">运动状态</div>
+            </div>
+            <div class="body">
+                <div class="form-group">
+                    <embed class="icon" src="../image/gait-analysis/walk.svg" type="image/svg+xml"></embed>
+                    <span class="content">走路: {{ walkSteps }}步</span>
+                </div>
+                <div class="form-group">
+                    <embed class="icon" src="../image/gait-analysis/run.svg" type="image/svg+xml"></embed>
+                    <span class="content">跑步: {{ runningSteps }}步</span>
+                </div>
+                <div class="form-group">
+                    <embed class="icon" src="../image/gait-analysis/upstair.svg" type="image/svg+xml"></embed>
+                    <span class="content">上楼: {{ upstairSteps }}步</span>
+                </div>
+                <div class="form-group">
+                    <embed class="icon" src="../image/gait-analysis/downstair.svg" type="image/svg+xml"></embed>
+                    <span class="content">下楼: {{ downstairSteps }}步</span>
+                </div>
+            </div>
+        </div>
+        <div class="static-status">
+            <div class="head">
+                <div class="title">静止状态</div>
+            </div>
+            <div class="body">
+                <div class="form-group">
+                    <embed class="icon" src="../image/gait-analysis/sit.svg" type="image/svg+xml"></embed>
+                    <span class="content">今天久坐{{ totalSitTime }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/public/jquery-1.12.1.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/public/weui.min.js"></script>
+    <script type="text/javascript" src="../js/public/vue.js"></script>
+    <script type="text/javascript" src="../js/public/util.js"></script>
+    <script type="text/javascript" src="../js/public/config.js"></script>
+    <script type="text/javascript" src="../js/public/wechat.js"></script>
+    <script type="text/javascript" src="../js/public/insole-parse.js"></script>
+    <script type="text/javascript" src="../js/gait-analysis.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="../css/public/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/public/new-main.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+</head>
+
+<body>
+    
+    <div id="myLoading" class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>  
+    <div id="page-wrapper" style="display: none; height: 100%; width: 100%;">
+        <div class="achievement">
+            <div class="achievement-left">
+                <img class="head-image" v-bind:src="headImageUrl">
+                <div class="nick-name">{{ nickName }}</div>
+                <div class="accomplishment">
+                    <p>连续运动{{ accomplishment }}天</p>
+                    <p>鞋底温度为{{ temperature }}℃</p>
+                </div>
+            </div>
+            <div class="achievement-right" v-on:click="deviceClicked">
+                {{ boundInfo }}
+            </div>
+        </div>
+
+        <div class="options-container">
+            <div class="option" v-on:click="forwardToPersonalInfo">
+                <div class="option-left">
+                    <embed class="icon" src="../image/home/personal.svg" type="image/svg+xml"></embed>
+                </div>
+                <div class="option-right">个人信息</div>
+            </div>
+            <div class="option" v-on:click="forwardToSportsInfo">
+                <div class="option-left">
+                    <embed class="icon" src="../image/home/sport.svg" type="image/svg+xml"></embed>
+                </div>
+                <div class="option-right">运动</div>
+            </div>
+            <div class="option" v-on:click="forwardToGaitAnalysis">
+                <div class="option-left">
+                    <embed class="icon" src="../image/home/gait.svg" type="image/svg+xml"></embed>
+                </div>
+                <div class="option-right">步态分析</div>
+            </div>
+            <div class="option" v-on:click="forwardToHelp">
+                <div class="option-left">
+                    <embed class="icon" src="../image/home/help.svg" type="image/svg+xml"></embed>
+                </div>
+                <div class="option-right">帮助</div>
+            </div>
+        </div>   
+    </div>
+
+    <script src="../js/public/jquery-1.12.1.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/public/weui.min.js"></script>
+    <script type="text/javascript" src="../js/public/vue.js"></script>
+    <script type="text/javascript" src="../js/public/util.js"></script>
+    <script type="text/javascript" src="../js/public/config.js"></script>
+    <script type="text/javascript" src="../js/public/wechat.js"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
+    
+</body>
+</html>

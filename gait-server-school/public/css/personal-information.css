@@ -1,0 +1,127 @@
+.head{
+    position: relative;
+    height: 1.5rem;
+    width: 7.2rem;
+    background-color: #EEEEEE;
+}
+.head .h-image{
+    position: absolute;
+    left:0.32rem;
+    top: 0.23rem;
+    width: 1rem;
+    height: 1rem;
+}
+.head .h-nickname{
+    position: absolute;
+    left: 1.73rem;
+    top: 0.4rem;
+    font-size: 0.33rem;
+    font-family: 'SimHei';
+}
+.main-container{
+    height: 7.47rem;
+    width: 7.2rem;
+    position: relative;
+}
+.option{
+    width: 2rem;
+    height: 2.55rem;
+    position: absolute;
+}
+.option .title{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    height: 0.55rem;
+    width: 2rem;
+    text-align: center;
+    line-height: 0.55rem;
+    font-size: 0.33rem;
+    font-family: 'SimHei';
+}
+.option .tap-circle{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 2rem;
+    height: 2rem;
+}
+.option .content{
+    width: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 0.5rem;
+    font-size: 0.33rem;
+}
+.option .unit{
+    width: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 1rem;
+    font-size:0.33rem;
+}
+.option.height{
+    left: 0.98rem;
+    top: 0.96rem;
+}
+.option.weight{
+    left: 4.3rem;
+    top: 0.96rem;
+}
+.option.birth-year{
+    left: 0.98rem;
+    top: 4.96rem;
+}
+.option.gender{
+    left: 4.3rem;
+    top: 4.96rem;
+}
+.option.sports-target{
+    left: 2.67rem;
+    top: 3rem;
+}
+.height .tap-circle{
+    border-color: #D83174;
+    color: #D83174;
+}
+.weight .tap-circle{
+    border-color: #EE9945;
+    color: #EE9945;
+}
+.birth-year .tap-circle{
+    border-color: #B4C714;
+    color: #B4C714;
+}
+.gender .tap-circle{
+    border-color: #50E93B;
+    color: #50E93B;
+}
+.gender.option .content{
+    top: 0.7rem;
+}
+.sports-target .tap-circle{
+    border-color: #30EBF2;
+    color: #30EBF2;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action{
+    font-size: 0.33rem;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action[data-action="cancel"]{
+    color: #CECBCB;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__hd .weui-picker__action[data-action="select"]{
+    color: #2175F4;
+}
+.weui-picker.weui-animate-slide-up .weui-picker__bd .weui-picker__group .weui-picker__content .weui-picker__item{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'SimHei';
+    font-style: bold;
+}
+.weui-loadmore .weui-loadmore__tips{
+    font-size: 16px;
+}
